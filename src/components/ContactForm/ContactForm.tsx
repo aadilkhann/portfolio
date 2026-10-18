@@ -50,7 +50,7 @@ export default function ContactForm() {
       `Reply to: ${values.email}`,
     ]
     const body = encodeURIComponent(bodyLines.join('\n'))
-    window.location.href = `mailto:hello@aaabad.dev?subject=${subject}&body=${body}`
+    window.location.href = `mailto:khan01970@gmail.com?subject=${subject}&body=${body}`
 
     setStatus('sent')
     setValues(initialValues)

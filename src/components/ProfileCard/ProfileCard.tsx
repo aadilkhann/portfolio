@@ -6,7 +6,7 @@ const socials = [
   { href: 'https://dribbble.com/', label: 'Design portfolio', Icon: Globe },
   { href: 'https://twitter.com/', label: 'Social / X', Icon: AtSign },
   { href: 'https://www.instagram.com/', label: 'Instagram', Icon: Camera },
-  { href: 'mailto:hello@aaabad.dev', label: 'Email', Icon: Mail },
+  { href: 'mailto:khan01970@gmail.com', label: 'Email', Icon: Mail },
 ]
 
 export default function ProfileCard() {
@@ -15,7 +15,7 @@ export default function ProfileCard() {
       <div className="profile-card__photo">
         <AvatarArt />
       </div>
-      <h2 className="profile-card__name">Aaabad Ahmed</h2>
+      <h2 className="profile-card__name">Adil Khan</h2>
       <p className="profile-card__bio">
         A software engineer who has developed countless innovative solutions.
       </p>
