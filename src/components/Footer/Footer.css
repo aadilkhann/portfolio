@@ -1,0 +1,25 @@
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1.75rem var(--container-pad);
+  border-top: 1px solid var(--color-border);
+  font-size: 0.85rem;
+  color: var(--color-text-faint);
+}
+
+.site-footer__text span {
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.site-footer__link {
+  color: var(--color-text-muted);
+  transition: color 0.2s ease;
+}
+
+.site-footer__link:hover {
+  color: var(--color-accent);
+}

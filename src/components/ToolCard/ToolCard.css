@@ -1,0 +1,51 @@
+.tool-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.tool-card:hover,
+.tool-card:focus-visible {
+  background: var(--color-surface-hover);
+  border-color: var(--color-border-strong);
+}
+
+.tool-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  background: var(--color-card-light);
+  color: var(--color-card-light-text);
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.tool-card__body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.tool-card__name {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.tool-card__description {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  margin-top: 0.15rem;
+}
+
+.tool-card__arrow {
+  margin-left: auto;
+}

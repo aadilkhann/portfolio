@@ -1,0 +1,44 @@
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 72ch;
+}
+
+.blog-post__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  width: fit-content;
+  transition: color 0.2s ease;
+}
+
+.blog-post__back:hover {
+  color: var(--color-accent);
+}
+
+.blog-post__title {
+  font-size: clamp(2rem, 5.5vw, 3.1rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.blog-post__meta {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 1rem;
+  color: var(--color-text-faint);
+  font-size: 0.9rem;
+}
+
+.blog-post__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}

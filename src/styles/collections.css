@@ -1,0 +1,33 @@
+/* Shared list/grid layouts reused across Home, Projects, Experience, Tools and Blog pages */
+
+.stack-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 560px) {
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.view-all-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-border-strong);
+  padding-bottom: 2px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.view-all-link:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}

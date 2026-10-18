@@ -1,0 +1,63 @@
+.profile-card {
+  background: var(--color-card-light);
+  color: var(--color-card-light-text);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 340px;
+}
+
+.profile-card__photo {
+  width: 100%;
+  aspect-ratio: 3 / 3.3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.profile-card__photo svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-card__name {
+  margin-top: 1.1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.profile-card__bio {
+  margin-top: 0.9rem;
+  color: #4a4a4a;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 24ch;
+}
+
+.profile-card__socials {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1.1rem;
+}
+
+.profile-card__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(18, 18, 18, 0.15);
+  color: var(--color-accent);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.profile-card__social-link:hover {
+  background: var(--color-accent);
+  color: #fff;
+}
